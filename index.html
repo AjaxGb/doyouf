@@ -10,6 +10,27 @@
 			width: 100%;
 			height: 100%;
 		}
+		#annoy {
+			font: 20px sans-serif;
+			color: white;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			animation: 8s linear infinite annoy;
+		}
+		@keyframes annoy {
+			0% { transform: scale(0.5) rotate(0deg); }
+			10% { transform: scale(1.5) rotate(36deg); }
+			20% { transform: scale(0.5) rotate(72deg); }
+			30% { transform: scale(1.5) rotate(108deg); }
+			40% { transform: scale(0.5) rotate(144deg); }
+			50% { transform: scale(1.5) rotate(180deg); }
+			60% { transform: scale(0.5) rotate(216deg); }
+			70% { transform: scale(1.5) rotate(252deg); }
+			80% { transform: scale(0.5) rotate(288deg); }
+			90% { transform: scale(1.5) rotate(324deg); }
+			100% { transform: scale(0.5) rotate(360deg); }
+		}
 	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZMV7KG99G"></script>
@@ -22,8 +43,15 @@
 </head>
 <body>
 	<audio id="pppp" src="pppp.mp3" autoplay loop></audio>
+	<p id="annoy" hidden>TOUCH ME</p>
 	<script>
-		addEventListener('click', function() {
+		pppp.addEventListener('canplaythrough', function() {
+			if (pppp.paused) annoy.hidden = false;
+		});
+		pppp.addEventListener('play', function() {
+			annoy.hidden = true;
+		});
+		addEventListener('mousedown', function() {
 			if (pppp.paused) pppp.play();
 		});
 	</script>
