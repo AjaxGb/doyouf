@@ -14,15 +14,15 @@ html {
 	animation: 8s linear infinite annoy;
 }
 @keyframes annoy {
-	0% { transform: translate(-50%, -50%) scale(1.5) rotate(-108deg); }
-	10% { transform: translate(-50%, -50%) scale(0.5) rotate(-72deg); }
-	20% { transform: translate(-50%, -50%) scale(1.5) rotate(-36deg); }
-	30% { transform: translate(-50%, -50%) scale(0.5) rotate(0deg); }
-	40% { transform: translate(-50%, -50%) scale(1.5) rotate(36deg); }
-	50% { transform: translate(-50%, -50%) scale(0.5) rotate(72deg); }
-	60% { transform: translate(-50%, -50%) scale(1.5) rotate(108deg); }
-	70% { transform: translate(-50%, -50%) scale(0.5) rotate(144deg); }
-	80% { transform: translate(-50%, -50%) scale(1.5) rotate(180deg); }
-	90% { transform: translate(-50%, -50%) scale(0.5) rotate(216deg); }
-	100% { transform: translate(-50%, -50%) scale(1.5) rotate(252deg); }
+	0% { transform: translate(-50%, -50%) scale(0.5) rotate(-36deg); }
+	10% { transform: translate(-50%, -50%) scale(1.5) rotate(0deg); }
+	20% { transform: translate(-50%, -50%) scale(0.5) rotate(36deg); }
+	30% { transform: translate(-50%, -50%) scale(1.5) rotate(72deg); }
+	40% { transform: translate(-50%, -50%) scale(0.5) rotate(108deg); }
+	50% { transform: translate(-50%, -50%) scale(1.5) rotate(144deg); }
+	60% { transform: translate(-50%, -50%) scale(0.5) rotate(180deg); }
+	70% { transform: translate(-50%, -50%) scale(1.5) rotate(216deg); }
+	80% { transform: translate(-50%, -50%) scale(0.5) rotate(252deg); }
+	90% { transform: translate(-50%, -50%) scale(1.5) rotate(288deg); }
+	100% { transform: translate(-50%, -50%) scale(0.5) rotate(324deg); }
 }
